@@ -40,7 +40,9 @@ for i in range(0, input_indcators_number):
         input_indicator = input_indicator.capitalize()
         indicator_list.append(input_indicator)
         if input_indicator == "ma":
-            ma_properties()
+            ma_value = int(input("Podaj liczbe okresow ktore chcesz sprawdzic"))
+            ma_type = input("Podaj typ sredniej (prosta, ważona, wykladnicza)")
+            ma_properties(ma_value, ma_type)
     elif input_indcators_number <= 0:
         print("Podałeś złą wartosc. Koniec programu")
         break
