@@ -4,7 +4,9 @@ import main
 userinput = input('Podaj nazwe spolki:')
 frame = input('Podaj przedział czasowy:')
 def user_search(symbol, rang):
-    URL = "https://api.iextrading.com/1.0/stock/%s/chart/%s" % (symbol, rang)
+    URL = f"https://api.iextrading.com/1.0/stock/{symbol}/chart/{rang}"
+#    URL = "https://api.iextrading.com/1.0/stock/" + symbol + "/chart/" + rang
+#    URL = "https://api.iextrading.com/1.0/stock/%s/chart/%s" % (symbol, rang)
     response = requests.get(URL)
     r = response.json()
     if response.status_code == requests.codes.ok:
