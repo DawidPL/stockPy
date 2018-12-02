@@ -59,40 +59,65 @@ company_name_input = input("Company name")
 
 # main Options API GET class 
 
-class GlobalOptionChain():
+class OptionChain():
   url = 'https://query1.finance.yahoo.com/v7/finance/options'
   name = company_name_input
-  r = requests.get('%s/%s' % (url, name))
+  r = requests.get('{}/{}'.format(url, name))
   print(r.status_code)
   data = r.json()
-
+ 
   def optionChainAll(self, name):
     self.name = company_name_input
-  
+ 
   def optionChainCall(self, name):
-      option_lastprice = GlobalOptionChain.data['optionChain']['result'][0]['options'][0]['calls'][0]['lastPrice']
-      option_bid = GlobalOptionChain.data['optionChain']['result'][0]['options'][0]['calls'][0]['bid']
-      option_ask = GlobalOptionChain.data['optionChain']['result'][0]['options'][0]['calls'][0]['ask'] 
-      option_stock_fullname = GlobalOptionChain.data['optionChain']['result'][0]['quote']['longName']
-      option_expirationDates = GlobalOptionChain.data['optionChain']['result'][0]['expirationDates']
-      option_strike = GlobalOptionChain.data['optionChain']['result'][0]['options'][0]['calls'][0]['strike']
-      option_volume = GlobalOptionChain.data['optionChain']['result'][0]['options'][0]['calls'][0]['volume']
-      option_interest = GlobalOptionChain.data['optionChain']['result'][0]['options'][0]['calls'][0]['openInterest']
-
+      self.name = option_type
+      option_expirationDates = OptionChain.data['optionChain']['result'][0]['expirationDates']
+      option_lastprice = OptionChain.data['optionChain']['result'][0]['options'][0][self.name][0]['lastPrice']
+      option_bid = OptionChain.data['optionChain']['result'][0]['options'][0][self.name][0]['bid']
+      option_ask = OptionChain.data['optionChain']['result'][0]['options'][0][self.name][0]['ask']
+      option_strike = OptionChain.data['optionChain']['result'][0]['options'][0][self.name][0]['strike']
+      option_volume = OptionChain.data['optionChain']['result'][0]['options'][0][self.name][0]['volume']
+      option_interest = OptionChain.data['optionChain']['result'][0]['options'][0][self.name][0]['openInterest']
+      option_stock_fullname = OptionChain.data['optionChain']['result'][0]['quote']['longName']
+      option_instrument_type = OptionChain.data['optionChain']['result'][0]['quote']['quoteType']
+      option_exchange_name = OptionChain.data['optionChain']['result'][0]['quote']['fullExchangeName']
+      option_market_state = OptionChain.data['optionChain']['result'][0]['quote']['marketState']
+      option_average_daily_volume_10d = OptionChain.data['optionChain']['result'][0]['quote']['averageDailyVolume10Day']
+      option_average_daily_volume_3m = OptionChain.data['optionChain']['result'][0]['quote']['averageDailyVolume3Month']
+      option_regular_market_volume = OptionChain.data['optionChain']['result'][0]['quote']['regularMarketVolume']
+      option_regular_market_price = OptionChain.data['optionChain']['result'][0]['quote']['regularMarketPrice']
+      option_regular_market_time = OptionChain.data['optionChain']['result'][0]['quote']['regularMarketTime']
+      option_regular_market_change = OptionChain.data['optionChain']['result'][0]['quote']['regularMarketChange']
+      option_regular_market_change_percent = OptionChain.data['optionChain']['result'][0]['quote']['regularMarketChangePercent']
+      option_regular_market_day_range = OptionChain.data['optionChain']['result'][0]['quote']['regularMarketDayRange']
+      option_regular_market_open = OptionChain.data['optionChain']['result'][0]['quote']['regularMarketOpen']
+      option_regular_market_previous_close = OptionChain.data['optionChain']['result'][0]['quote']['regularMarketPreviousClose']
+      option_regular_market_day_hight = OptionChain.data['optionChain']['result'][0]['quote']['regularMarketDayHigh']
+      option_regular_market_day_low = OptionChain.data['optionChain']['result'][0]['quote']['regularMarketDayLow']
+      option_regular_market_bid = OptionChain.data['optionChain']['result'][0]['quote']['bid']
+      option_regular_market_bidsize = OptionChain.data['optionChain']['result'][0]['quote']['bidSize']
+      option_regular_market_ask = OptionChain.data['optionChain']['result'][0]['quote']['ask']
+      option_regular_market_asksize = OptionChain.data['optionChain']['result'][0]['quote']['askSize']
+ 
+      unix_time = int(option_regular_market_time)
+      print(datetime.utcfromtimestamp(unix_time).strftime('%Y-%m-%d %H:%M:%S'))
+      print(option_strike, option_instrument_type)
+ 
   def optionExpirationDates(self, name):
     try:
-      option_expirationDates = GlobalOptionChain.data['optionChain']['result'][0]['expirationDates']
+      option_expirationDates = OptionChain.data['optionChain']['result'][0]['expirationDates']
       for exp in option_expirationDates:
-        expirationDates = requests.get('%s/%s?=date=%s' % (self.url, self.name, exp))
+        expirationDates = requests.get('{}/{}?=date={}'.format(self.url, self.name, exp))
         exp_data = expirationDates.json()
-        formatted_exp = int(exp)
-        print(datetime.utcfromtimestamp(formatted_exp).strftime('%Y-%m-%d'), sep ='\n')
+        unix_time = int(exp)
+        print(datetime.utcfromtimestamp(unix_time).strftime('%Y-%m-%d'), sep ='\n')
     except IndexError:
         print('Ta spółka nie umożliwia handlu opcjami')
-
-
-option_chain = GlobalOptionChain()
+ 
+ 
+option_chain = OptionChain()
 option_chain.optionExpirationDates(company_name_input)
+option_chain.optionChainCall(option_type)
 
 
 #https://www.strategic-options.com/insight/how-to-get-option-prices-for-free-api-yahoo/
