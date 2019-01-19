@@ -11,10 +11,10 @@ class OptionChain():
   print(r.status_code)
   data = r.json()
  
-  def optionChainAll(self, name):
-    self.name = company_name_input
- 
-  def optionChainCall(self, name):
+  def __init__(self,name):
+    self.name = name
+    
+  def optionChainCall(self):
       self.name = option_type
       option_expirationDates = OptionChain.data['optionChain']['result'][0]['expirationDates']
       option_lastprice = OptionChain.data['optionChain']['result'][0]['options'][0][self.name][0]['lastPrice']
@@ -48,7 +48,7 @@ class OptionChain():
       print(datetime.utcfromtimestamp(unix_time).strftime('%Y-%m-%d %H:%M:%S'))
       print(option_strike, option_instrument_type)
  
-  def optionExpirationDates(self, name):
+  def optionExpirationDates(self):
     try:
       option_expirationDates = OptionChain.data['optionChain']['result'][0]['expirationDates']
       for exp in option_expirationDates:
