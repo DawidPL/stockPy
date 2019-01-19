@@ -7,22 +7,25 @@ print (company_names)
 # main API GET class 
 
 class Global():
+  def __init__(self, name, names):
+    self.name = name
+    self.names = names
   url = 'https://api.iextrading.com/1.0/stock'
-  def getCompanyInfo(self, name):
+  def getCompanyInfo(self):
     self.name = company_name_input 
     r = requests.get('%s/%s/company' % (self.url, self.name))
     print(r.status_code)
     data = r.json()
     print(data['industry'] +'\n' + data['companyName'])
 
-  def currentQuote(self, name):
+  def currentQuote(self):
     self.name = company_name_input 
     r = requests.get('%s/%s/book' % (self.url, self.name))
     print(r.status_code)
     data = r.json()
     print(data['quote']['latestPrice'])
 
-  def batchTest(self, names):
+  def batchTest(self):
     self.names = company_names
     for name in names:
       r = requests.get('%s/market/batch?symbols=%s&types=quote' % (self.url, self.names))
@@ -30,14 +33,14 @@ class Global():
       data = r.json()
       print(*data, sep =',')
 
-  def earnings(self,names):
+  def earnings(self):
     self.name = company_name_input 
     r = requests.get('%s/%s/earnings' % (self.url, self.name))
     print(r.status_code)
     data = r.json()
     print(data)
 
-  def news(self, names):
+  def news(self):
     self.name = company_name_input 
     r = requests.get('%s/%s/news/last/5' % (self.url, self.name))
     print(r.status_code)
