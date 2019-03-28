@@ -1,19 +1,19 @@
 import requests
 from datetime import datetime
 
-company_name_input = input("Company name")
+company_name_input: int = input("Company name")
 
 
 class OptionChain:
-    url = 'https://query1.finance.yahoo.com/v7/finance/options'
+    url: str = 'https://query1.finance.yahoo.com/v7/finance/options'
     r = requests.get(f'{url}/{company_name_input}')
     print(r.status_code)
     data = r.json()
 
-    def __init__(self, name):
+    def __init__(self, name: str) -> None:
         self.name = name
 
-    def option_chain_call(self):
+    def option_chain_call(self) -> str:
         self.name = option_type
         self.base_endpoint = f"{OptionChain.data}['optionChain']['result'][0]"
         option_expiration_dates = OptionChain.data['optionChain']['result'][0]['expirationDates']
@@ -52,7 +52,7 @@ class OptionChain:
         print(datetime.utcfromtimestamp(unix_time).strftime('%Y-%m-%d %H:%M:%S'))
         print(option_strike, option_instrument_type)
 
-    def option_expiration_dates(self):
+    def option_expiration_dates(self) -> str:
         try:
             option_expiration_dates = OptionChain.data['optionChain']['result'][0]['expirationDates']
             for exp in option_expiration_dates:
