@@ -1,6 +1,4 @@
-from HistoricalCurrencyRate import HistoricalCurrencyRates
-
-test = HistoricalCurrencyRates(4.43, 'usd', '2013-05-20')
+from HistoricalRate import historical_rate_currency
 
 
 class Taxes:
@@ -15,11 +13,11 @@ class Taxes:
         self.asset_sold_fee = asset_sold_fee
 
     def expanse_income(self) -> float:
-        self.rate = test.get_historical_currency_rate()
+        self.rate = historical_rate_currency.get_historical_currency_rate()
         return (self.asset_amount * self.asset_bought_price) * self.rate + self.asset_bought_fee
 
     def income(self) -> float:
-        return 1000
+        return 100
 
     def revenue(self) -> float:
         # dochód
@@ -32,4 +30,5 @@ class Taxes:
 
 tax = Taxes(8, 6.30, 7.70, 0.4, 0.4)
 
+print(tax.revenue())
 print(tax.expanse_income())

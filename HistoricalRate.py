@@ -1,8 +1,10 @@
 import requests
 import json
+from bs4 import BeautifulSoup
+import re
 
 
-class HistoricalCurrencyRates:
+class HistoricalRates:
     def __init__(self, date: float, currency_code: str, currency_date: str) -> None:
         self.date = date
         self.currency_code = currency_code
@@ -15,11 +17,19 @@ class HistoricalCurrencyRates:
         rate: float = r['rates'][0]['mid']
         return round(rate, 2)
 
+    @staticmethod
+    def get_historical_gold_rate(date: str) -> float:
+        url = requests.get(f'http://api.nbp.pl/api/cenyzlota/{date}/?format=json')
+        r = url.json()
+        rate: float = r[0]['cena']
+        return rate
 
-historical_currency_rate = HistoricalCurrencyRates(3.33, 'usd', '2019-01-21')
+
+historical_rate_currency = HistoricalRates(3.33, 'usd', '2019-01-13')
 
 try:
-    print(historical_currency_rate.get_historical_currency_rate())
+    print(historical_rate_currency.get_historical_currency_rate())
+    print(HistoricalRates.get_historical_gold_rate('2014-05-10'))
 except json.decoder.JSONDecodeError:
     print('Brak danych - w ten dzień giełda była zamknięta')
 
