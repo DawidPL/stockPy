@@ -1,7 +1,5 @@
 import requests
 import json
-from bs4 import BeautifulSoup
-import re
 
 
 class HistoricalRates:
@@ -18,6 +16,17 @@ class HistoricalRates:
         return round(rate, 2)
 
     @staticmethod
+    def get_historical_currencies_table(date: str) -> None:
+        url = requests.get(f'http://api.nbp.pl/api/exchangerates/tables/b/{date}/?format=json')
+        r = url.json()
+        for i in range(0, 100):
+            default_path = r[0]['rates'][i]
+            name: str = default_path['currency']
+            code: str = default_path['code']
+            mid: float = default_path['mid']
+            print(f'{name} | {code} | {mid}')
+
+    @staticmethod
     def get_historical_gold_rate(date: str) -> float:
         url = requests.get(f'http://api.nbp.pl/api/cenyzlota/{date}/?format=json')
         r = url.json()
@@ -25,12 +34,18 @@ class HistoricalRates:
         return rate
 
 
-historical_rate_currency = HistoricalRates(3.33, 'usd', '2019-01-13')
+historical_rate_currency = HistoricalRates(3.33, 'usd', '2019-01-15')
 
 try:
     print(historical_rate_currency.get_historical_currency_rate())
-    print(HistoricalRates.get_historical_gold_rate('2014-05-10'))
 except json.decoder.JSONDecodeError:
     print('Brak danych - w ten dzień giełda była zamknięta')
-
+try:
+    print(HistoricalRates.get_historical_gold_rate('2014-05-12'))
+except json.decoder.JSONDecodeError:
+    print ('Brak danych - tego dnia handel na złocie się nie odbywał')
+try:
+    print(HistoricalRates.get_historical_currencies_table('2014-05-14'))
+except json.decoder.JSONDecodeError:
+    print ('Brak danych - tego dnia giełda była nieczynna')
 
