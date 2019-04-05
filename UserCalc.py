@@ -26,7 +26,7 @@ class UserCalc:
         return round(wanted_exchange_price, 2)
 
     @staticmethod
-    def sl_price_level(exchange_entry_price: float, sl_level: float = 0,) -> float:
+    def sl_price_level(exchange_entry_price: float, sl_level: float = 0) -> float:
         x = (exchange_entry_price / 100) * sl_level
         y = round(exchange_entry_price - x, 2)
         return y
