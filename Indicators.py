@@ -1,9 +1,17 @@
 class Indicators:
-    """ global indicators properties """
+
     def __init__(self, current_value: float, sell_alert_value: float, buy_alert_value: float) -> None:
         self.current_value = current_value
         self.sell_alert_value = sell_alert_value
         self.buy_alert_value = buy_alert_value
+
+     def indicator_current_status(self) -> int:
+        if self.current_value > 70:
+            return 1
+        elif self.current_value < 30:
+            return -1
+        elif 70 > self.current_value >30:
+            return 0
 
     def indicator_alert(self) -> str:
         sell_alert: str = "Sygnał sprzedaży"
@@ -17,10 +25,6 @@ class Indicators:
             return buy_alert
         else:
             return "test"
-
-    # def get_value(self):
-
-# main rsi properties
 
 
 rsi = Indicators(72, 77, 30)
