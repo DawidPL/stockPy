@@ -1,13 +1,19 @@
 import requests
 from typing import List
 
-company_name_input: str = input("Company name")
-company_names: List[str] = input("Company names").split(',')
-print(company_names)
+
+class RequestIex:
+
+    url: str = 'https://cloud.iexapis.com/beta/stock/'
+    key: str = '/quote?token=?'
+
+    @classmethod
+    def get_company_info(cls, value):
+        return requests.get(f'{cls.url}+{value}+{cls.key}').json()
 
 
 class Global:
-    url = 'https://api.iextrading.com/1.0/stock'
+    url = 'https://cloud.iexapis.com/beta/stock'
     
     def __init__(self, name: str, names: List[str]) -> None:
         self.name = name

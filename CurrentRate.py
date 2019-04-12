@@ -20,5 +20,5 @@ class CurrentRate:
         return f'Dzisiejszy kurs złota: {rate} PLN/gram'
 
 
-print(CurrentRate.current_rate_currency('chf'))
+print(CurrentRate.current_rate_currency('eur'))
 print(CurrentRate.current_rate_gold())
