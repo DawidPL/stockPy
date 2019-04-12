@@ -1,7 +1,7 @@
 from typing import List
 
 
-class UserCalc:
+class UserCalculators:
 
     @staticmethod
     def folding_percentage(start_value: float, return_rate: float, time_period: int, ) -> List[float]:
@@ -32,7 +32,5 @@ class UserCalc:
         return y
 
 
-procent = UserCalc.folding_percentage(500, 10.0, 12)
-print(procent)
-print(UserCalc.risk_reward_ratio(1.24, 1000, 160))
-print(UserCalc.sl_price_level(10, 3.25))
+folding_prc = UserCalculators.folding_percentage(500, 10.0, 12)
+

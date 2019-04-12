@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
-from UserCalc import procent
+from UserCalculators import folding_prc
 
 
-plt.plot(procent)
+plt.plot(folding_prc)
 plt.ylabel('Zysk')
 plt.show()
