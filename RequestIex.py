@@ -1,13 +1,33 @@
 import requests
+import re
 from typing import List
 
-company_name_input: str = input("Company name")
-company_names: List[str] = input("Company names").split(',')
-print(company_names)
 
+class RequestIex:
 
+    url: str = 'https://cloud.iexapis.com/beta/stock/'
+    key: str = '/quote?token=?'
+
+    @classmethod
+    def get_company_info(cls, value):
+        return requests.get(f'{cls.url}+{value}+{cls.key}').json()
+
+    @staticmethod
+    def available_equities(etf: bool = False):
+        token: str = ''
+        url = f'https://cloud.iexapis.com/beta/ref-data/symbols?token={token}'
+        data = requests.get(url).json()
+        available_company_list: List[str] = [i['name'] for i in data]
+        for i in available_company_list:
+            if not etf:
+                print(i, sep='\n')
+            else:
+                if re.search(r'ETF', i):
+                    print(i, sep='\n')
+
+'''
 class Global:
-    url = 'https://api.iextrading.com/1.0/stock'
+    url = 'https://cloud.iexapis.com/beta/stock'
     
     def __init__(self, name: str, names: List[str]) -> None:
         self.name = name
@@ -46,4 +66,4 @@ class Global:
 
 
 global_company_info = Global(company_name_input, company_names)
-
+'''
