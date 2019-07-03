@@ -25,6 +25,8 @@ class RequestIex:
                 if re.search(r'ETF', i):
                     print(i, sep='\n')
 
+
+print(RequestIex.available_equities())
 '''
 class Global:
     url = 'https://cloud.iexapis.com/beta/stock'

@@ -3,6 +3,8 @@ import json
 
 
 class HistoricalRates:
+    __slots__ = ['date', 'currency_code', 'currency_date']
+
     def __init__(self, date: float, currency_code: str, currency_date: str) -> None:
         self.date = date
         self.currency_code = currency_code

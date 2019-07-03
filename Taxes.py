@@ -2,6 +2,8 @@ from HistoricalRate import historical_rate_currency
 
 
 class Taxes:
+    __slots__ = ['asset_amount', 'asset_bought_price', 'asset_sold_price', 'rate', 'asset_bought_fee',
+                 'asset_sold_price']
 
     def __init__(self, asset_amount: int, asset_bought_price: float, asset_sold_price: float,
                  rate: float, asset_bought_fee: float = 0.0, asset_sold_fee: float = 0.0) -> None:
@@ -17,7 +19,7 @@ class Taxes:
         return (self.asset_amount * self.asset_bought_price) * self.rate + self.asset_bought_fee
 
     def income(self) -> float:
-        return 100
+        pass
 
     def revenue(self) -> float:
         # dochód
@@ -25,7 +27,7 @@ class Taxes:
 
     @staticmethod
     def client_info() -> str:
-        return 'Test'
+        pass
 
 
 tax = Taxes(8, 6.30, 7.70, 0.4, 0.4)
