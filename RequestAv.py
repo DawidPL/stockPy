@@ -8,6 +8,10 @@ class RequestAv:
 
     @classmethod
     def sectors_performance(cls):
+        """
+        All available sectors performance with different time range
+        :return:
+        """
         data = requests.get(cls.url).json()
         range_data: List[str] = ['info', 'aktualnie', '1 dzień', '5 dni', '1 miesiąc', '3 miesiące',
                                  '1 rok (do dnia dzisiejszego)', '1 rok', '3 lata', '5 lat', '10 lat']

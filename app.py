@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from PyQt5.QtWidgets import QApplication, QWidget, QGridLayout, QLabel
-from PyQt5.QtGui import QIcon
-from PySide2.QtCharts import QtCharts
+from PyQt5.QtWidgets import QApplication, QWidget, QGridLayout, QLabel, QLineEdit
+
+
 
 
 class Chart(QWidget):
@@ -13,7 +13,6 @@ class Chart(QWidget):
 
     def interface(self):
 
-        self.table.setHorizontalHeaderLabels(['Nazwa', 'Ticket'])
         label1 = QLabel('<font color=red size=24>Kurs</font>', self)
         label2 = QLabel('<font color=green size=24>Data</font>', self)
 
@@ -32,4 +31,5 @@ if __name__ == '__main__':
 
     app = QApplication(sys.argv)
     window = Chart()
-sys.exit(app.exec_())
+    sys.exit(app.exec_())
+

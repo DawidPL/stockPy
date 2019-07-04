@@ -11,6 +11,10 @@ class HistoricalRates:
         self.currency_date = currency_date
 
     def get_historical_currency_rate(self) -> float:
+        """
+        Return single currency rate from polish central bank
+        :return: float
+        """
         # date format is : 2000-12-01
         url = requests.get(f'http://api.nbp.pl/api/exchangerates/rates/a/{self.currency_code}/{self.currency_date}/?format=json')
         r = url.json()
@@ -19,6 +23,11 @@ class HistoricalRates:
 
     @staticmethod
     def get_historical_currencies_table(date: str) -> None:
+        """
+        Display rates table with all available currencies from polish central bank.
+        :param date: str
+        :return: None
+        """
         url = requests.get(f'http://api.nbp.pl/api/exchangerates/tables/b/{date}/?format=json')
         r = url.json()
         for i in range(0, 100):
@@ -30,6 +39,11 @@ class HistoricalRates:
 
     @staticmethod
     def get_historical_gold_rate(date: str) -> float:
+        """
+        Return gold rate base on given date.
+        :param date: str
+        :return: float
+        """
         url = requests.get(f'http://api.nbp.pl/api/cenyzlota/{date}/?format=json')
         r = url.json()
         rate: float = r[0]['cena']
