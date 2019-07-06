@@ -12,7 +12,12 @@ class OptionChain:
         self.name = name
 
     @classmethod
-    def option_chain_call(cls, name) -> None:
+    def option_chain_call(cls, name: str) -> None:
+        """
+        Option call chain from Yahoo API
+        :param name: str
+        :return: None
+        """
         option_expiration_dates = cls.base_endpoint + "['expirationDates']"
         option_lastprice = cls.base_endpoint + f"['options'][0][{name}][0]['lastPrice']"
         option_bid = cls.base_endpoint + f"['options'][0][{name}][0]['bid']"
@@ -42,7 +47,12 @@ class OptionChain:
         option_regular_market_asksize = cls.base_endpoint + "['quote']['askSize']"
 
     @classmethod
-    def option_expiration_dates(cls, name) -> any:
+    def option_expiration_dates(cls, name: str) -> Any:
+        """
+        Option expiration date from Yahoo API
+        :param name: str
+        :return: Any
+        """
         try:
             option_expiration_date = cls.base_endpoint + "['expirationDates']"
             for exp in option_expiration_date:

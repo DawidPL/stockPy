@@ -1,6 +1,6 @@
 import requests
 import re
-from typing import List
+from typing import List, Dict, Any
 
 
 class RequestIex:
@@ -9,11 +9,21 @@ class RequestIex:
     key: str = '/quote?token=?'
 
     @classmethod
-    def get_company_info(cls, value):
+    def get_company_info(cls, value: str) -> Dict:
+        """
+        Default, shortcut company info
+        :param value: str
+        :return: Dict
+        """
         return requests.get(f'{cls.url}+{value}+{cls.key}').json()
 
     @staticmethod
-    def available_equities(etf: bool = False):
+    def available_equities(etf: bool = False) -> Any:
+        """
+        Return list of all available equities to trading
+        :param etf: bool
+        :return: Any
+        """
         token: str = ''
         url = f'https://cloud.iexapis.com/beta/ref-data/symbols?token={token}'
         data = requests.get(url).json()
@@ -25,6 +35,8 @@ class RequestIex:
                 if re.search(r'ETF', i):
                     print(i, sep='\n')
 
+
+print(RequestIex.available_equities())
 '''
 class Global:
     url = 'https://cloud.iexapis.com/beta/stock'
