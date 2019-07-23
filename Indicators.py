@@ -37,5 +37,6 @@ class Indicators:
             return "test"
 
 
-rsi = Indicators(72, 77, 30)
-print(rsi.indicator_alert())
+if __name__ == "__main__":
+    rsi = Indicators(72, 77, 30)
+    rsi.indicator_alert()

@@ -1,7 +1,14 @@
 import matplotlib.pyplot as plt
-from UserCalculators import folding_prc
+from UserCalculators import UserCalculators
+
+a, b, c = [int(input("podaj liczby")) for i in range(3)]
 
 
-plt.plot(folding_prc)
-plt.ylabel('Zysk')
-plt.show()
+def chart_folding_percent():
+    plt.plot(UserCalculators.folding_percentage(a, b, c))
+    plt.ylabel('Zysk')
+    return plt.show()
+
+
+if __name__ == "__main__":
+    chart_folding_percent()
