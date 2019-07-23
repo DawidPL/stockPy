@@ -3,7 +3,7 @@ from HistoricalRate import historical_rate_currency
 
 class Taxes:
     __slots__ = ['asset_amount', 'asset_bought_price', 'asset_sold_price', 'rate', 'asset_bought_fee',
-                 'asset_sold_price']
+                 'asset_sold_fee']
 
     def __init__(self, asset_amount: int, asset_bought_price: float, asset_sold_price: float,
                  rate: float, asset_bought_fee: float = 0.0, asset_sold_fee: float = 0.0) -> None:
@@ -30,7 +30,7 @@ class Taxes:
         pass
 
 
-tax = Taxes(8, 6.30, 7.70, 0.4, 0.4)
-
-print(tax.revenue())
-print(tax.expanse_income())
+# if __name__ == "__main__":
+#     tax = Taxes(8, 6.30, 7.70, 0.4, 0.4)
+#     tax.revenue()
+#     tax.expanse_income()

@@ -13,9 +13,9 @@ class HistoricalRates:
     def get_historical_currency_rate(self) -> float:
         """
         Return single currency rate from polish central bank
+        date format is : yyyy-mm-dd
         :return: float
         """
-        # date format is : 2000-12-01
         url = requests.get(f'http://api.nbp.pl/api/exchangerates/rates/a/{self.currency_code}/{self.currency_date}/?format=json')
         r = url.json()
         rate: float = r['rates'][0]['mid']

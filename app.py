@@ -1,36 +1,35 @@
 # -*- coding: utf-8 -*-
-
-from Charts import chart_folding_percent
-from PyQt5.QtWidgets import QApplication, QWidget, QGridLayout, QLabel, QPushButton
-
-
-class Chart(QWidget):
-    def __init__(self, parent=None):
-        super().__init__(parent)
-
-        self.interface()
-
-    def interface(self):
-
-        label1 = QLabel('<font color=red size=24>Kurs</font>', self)
-        label2 = QLabel('<font color=green size=24>Data</font>', self)
-        button = QPushButton('Pokaz')
-
-        grid_position = QGridLayout()
-        grid_position.addWidget(label1, 0, 0)
-        grid_position.addWidget(label2, 0, 1)
-
-        button.show()
-        self.setLayout(grid_position)
-        self.resize(800, 500)
-        self.setWindowTitle('Wykres złota')
-        self.show()
+import sys
+from PySide2.QtCore import Qt, Slot
+from PySide2.QtWidgets import QApplication, QMainWindow, QAction
 
 
-if __name__ == '__main__':
-    import sys
+class MainWindow(QMainWindow):
+    def __init__(self):
+        QMainWindow.__init__(self)
+        self.setWidowTitle("StockBook")
 
-    app = QApplication(sys.argv)
-    window = Chart()
-    sys.exit(app.exec_())
+        # Menu
+        self.menu = self.menuBar()
+        self.file_menu = self.menu.addMenu("File")
+
+        exit_action = QAction("Exit", self)
+        exit_action.setShortcut("Ctrl+Q")
+        exit_action.triggered.connect(self.exit_app)
+
+        self.file_menu.addAction(exit_action)
+
+    @Slot()
+    def exit_app(self, checked):
+        QApplication.quit()
+
+
+if __name__ == "__main__":
+    app = QApplication([])
+
+    window = MainWindow()
+    window.resize(800, 600)
+    window.show()
+
+    sys.exit(app.exe_())
 

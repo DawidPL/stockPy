@@ -19,6 +19,7 @@ class RequestAv:
         for i in data.values():
             print('---------')
             print(range_data[n])
+
             n += 1
             print('---------')
             for y, k in i.items():
