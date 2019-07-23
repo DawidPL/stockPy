@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
-from UserCalculators import folding_prc
+from UserCalculators import UserCalculators
 
 
-plt.plot(folding_prc)
-plt.ylabel('Zysk')
-plt.show()
+def chart_folding_percent():
+    plt.plot(UserCalculators.folding_percentage(100.0, 5.0, 3))
+    plt.ylabel('Zysk')
+    return plt.show()
