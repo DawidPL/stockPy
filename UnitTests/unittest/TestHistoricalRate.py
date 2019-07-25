@@ -16,9 +16,9 @@ class TestHistoricalRates(unittest.TestCase):
 
         """
         currencies_codes = ['JPY', 'AUD', 'GBP', 'EUR']
-
         rates = [0.03, 3.12, 4.98, 4.28]
-        helper.currency_loop_helper(get_historical_currency_rate, TestHistoricalRates.dates_rate, rates, currencies_codes)
+        helper.currency_loop_helper(get_historical_currency_rate, TestHistoricalRates.dates_rate,
+                                    rates, currencies_codes)
 
     def test_currency_rate(self):
 
@@ -29,7 +29,8 @@ class TestHistoricalRates(unittest.TestCase):
         """
         currency_name = ['USD'] * 4
         rates = [3.67, 4.07, 3.04, 3.89]
-        helper.currency_loop_helper(get_historical_currency_rate, TestHistoricalRates.dates_rate, rates, currency_name)
+        helper.currency_loop_helper(get_historical_currency_rate, TestHistoricalRates.dates_rate,
+                                    rates, currency_name)
 
     def test_get_historical_gold_rate(self):
 
@@ -42,5 +43,3 @@ class TestHistoricalRates(unittest.TestCase):
         helper.gold_loop_helper(get_historical_gold_rate, TestHistoricalRates.dates_rate, rates)
 
 
-if __name__ == '__main__':
-    unittest.main()
