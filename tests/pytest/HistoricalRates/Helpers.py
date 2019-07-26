@@ -1,6 +1,6 @@
 import pytest
-
-from HistoricalRate import get_historical_currency_rate
+import mock
+from src.HistoricalRates import HistoricalRates
 
 
 def api_data_type_helper():
@@ -8,13 +8,14 @@ def api_data_type_helper():
 
 
 def currency_loop_helper():
-        #historical_rates_mock = mock.Mock(HistoricalRates)
+        historical_rates_mock = mock.Mock(HistoricalRates)
         dates_rate = ['2018-05-25', '2017-02-20', '2013-12-11']
         currencies_codes = ['JPY', 'AUD', 'GBP']
         expected_rates = [0.03, 3.12, 4.98]
         actual_rates = []
         for i in range(len(dates_rate)):
-            result = get_historical_currency_rate(currencies_codes[i], dates_rate[i])
+            historical_rates_mock.get_historical_currency_rate.return_value = expected_rates[i]
+            result = historical_rates_mock.get_historical_currency_rate(currencies_codes[i], dates_rate[i])
             actual_rates.append(result)
         actual_list = [(a, b) for a, b in zip(actual_rates, expected_rates)]
         return actual_list
