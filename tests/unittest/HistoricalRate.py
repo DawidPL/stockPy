@@ -22,9 +22,6 @@ def get_historical_gold_rate(date: str) -> float:
     return rate
 
 
-if __name__ == "__main__":
-    get_historical_currency_rate('USD', '2018-05-27')
-
 
 
 

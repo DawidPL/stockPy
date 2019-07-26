@@ -1,4 +1,4 @@
-from HistoricalRate import historical_rate_currency
+from src.HistoricalRates import historical_rate_currency
 
 
 class Taxes:

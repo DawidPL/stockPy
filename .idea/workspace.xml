@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e2cebc5-c3f5-4487-9b88-de0a5784ff1c" name="Default Changelist" comment="add __docs__">
-      <change beforePath="$PROJECT_DIR$/UnitTesting/Helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTesting/Helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTesting/TestHistoricalRate.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTesting/TestHistoricalRate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/pytest/HistoricalRates/Helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Charts.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Charts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrentRate.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CurrentRate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrentRateTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CurrentRateTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HistoricalRate.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/HistoricalRates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Indicators.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Indicators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RequestAv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/RequestAv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RequestIex.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/RequestIex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RequestNbp.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/RequestNbp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RequestYahoo.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/RequestYahoo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RiskManagment-test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/RiskManagment-test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taxes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Taxes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/pytest/Helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/pytest/HistoricalRate.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pytest/HistoricalRates/HistoricalRate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/pytest/test_HistoricalRate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/unittest/Helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unittest/Helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/unittest/HistoricalRate.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unittest/HistoricalRate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTests/unittest/TestHistoricalRate.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unittest/TestHistoricalRate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserCalculators.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserCalculators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console-test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/console-test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,47 +33,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.55508214">
+    <splitter split-orientation="horizontal" split-proportion="0.4814364">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Taxes.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="40">
-                  <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/UnitTesting/HistoricalRate.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="320">
-                  <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/HistoricalRate.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="140">
-                  <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#0#15#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/UnitTesting/TestHistoricalRate.py">
+            <entry file="file://$PROJECT_DIR$/tests/pytest/HistoricalRates/test_HistoricalRates.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="520">
-                  <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+                <state relative-caret-position="300">
+                  <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
                   <folding>
-                    <element signature="e#0#15#0" expanded="true" />
+                    <element signature="e#0#13#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/HistoricalRates.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="20">
+                  <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
                 </state>
               </provider>
             </entry>
@@ -60,12 +60,15 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/UnitTesting/Helpers.py">
+            <entry file="file://$PROJECT_DIR$/tests/pytest/HistoricalRates/Helpers.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="40">
-                  <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+                <state relative-caret-position="280">
+                  <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+                  <folding>
+                    <element signature="e#0#13#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -111,12 +114,27 @@
         <option value="$PROJECT_DIR$/UnitTesting/helpers.py" />
         <option value="$PROJECT_DIR$/UnitTesting/TestHistoricalRate.py" />
         <option value="$PROJECT_DIR$/UnitTesting/Helpers.py" />
+        <option value="$PROJECT_DIR$/UnitTests/pytests/HistoricalRate.py" />
+        <option value="$PROJECT_DIR$/UnitTests/pytests/TestHistoricalRate.py" />
+        <option value="$PROJECT_DIR$/UnitTests/pytests/Helpers.py" />
+        <option value="$PROJECT_DIR$/UnitTests/pytests/test_HistoricalRate.py" />
+        <option value="$PROJECT_DIR$/UnitTests/pytest/HistoricalRate.py" />
+        <option value="$PROJECT_DIR$/UnitTests/unittest/TestHistoricalRate.py" />
+        <option value="$PROJECT_DIR$/UnitTests/pytest/test_HistoricalRate.py" />
+        <option value="$PROJECT_DIR$/UnitTests/pytest/Helpers.py" />
+        <option value="$PROJECT_DIR$/tests/pytest/test_HistoricalRate.py" />
+        <option value="$PROJECT_DIR$/tests/pytest/HistoricalRate.py" />
+        <option value="$PROJECT_DIR$/tests/pytest/HistoricalRates/test_HistoricalRate.py" />
+        <option value="$PROJECT_DIR$/tests/unittest/HistoricalRate.py" />
+        <option value="$PROJECT_DIR$/src/HistoricalRates.py" />
+        <option value="$PROJECT_DIR$/tests/pytest/HistoricalRates/test_HistoricalRates.py" />
+        <option value="$PROJECT_DIR$/tests/pytest/HistoricalRates/Helpers.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2095" />
-    <option name="y" value="-22" />
+    <option name="x" value="2209" />
+    <option name="y" value="10" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -135,7 +153,18 @@
             <path>
               <item name="stockPy" type="b2602c69:ProjectViewProjectNode" />
               <item name="stockPy" type="462c0819:PsiDirectoryNode" />
-              <item name="UnitTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stockPy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stockPy" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stockPy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stockPy" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="unittest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -145,11 +174,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/UnitTesting/TestHistoricalRate.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/UnitTests/pytests/test_HistoricalRate.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dawid Hrynkiewicz\Desktop\zadania\wlasne\stockPy\stockPy\tests\pytest\HistoricalRates" />
+      <recent name="C:\Users\Dawid Hrynkiewicz\Desktop\zadania\wlasne\stockPy\stockPy\src" />
+      <recent name="C:\Users\Dawid Hrynkiewicz\Desktop\zadania\wlasne\stockPy\stockPy\UnitTests\unittest" />
       <recent name="C:\Users\Dawid Hrynkiewicz\Desktop\zadania\wlasne\stockPy\stockPy\UnitTesting" />
     </key>
   </component>
@@ -165,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in TestHistoricalRate.py">
+  <component name="RunManager" selected="Python tests.pytest in HistoricalRate">
     <configuration name="App" type="PythonConfigurationType" factoryName="Python">
       <module name="stockPy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,7 +210,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Dawid Hrynkiewicz\Desktop\zadania\wlasne\stockPy\stockPy\src\app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,7 +231,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Charts.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Dawid Hrynkiewicz\Desktop\zadania\wlasne\stockPy\stockPy\src\Charts.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -220,7 +252,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CurrentRate.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Dawid Hrynkiewicz\Desktop\zadania\wlasne\stockPy\stockPy\src\CurrentRate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -241,7 +273,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CurrentRateTable.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Dawid Hrynkiewicz\Desktop\zadania\wlasne\stockPy\stockPy\src\CurrentRateTable.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -262,7 +294,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HistoricalRate.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Dawid Hrynkiewicz\Desktop\zadania\wlasne\stockPy\stockPy\src\HistoricalRates.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -283,7 +315,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Indicators.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Dawid Hrynkiewicz\Desktop\zadania\wlasne\stockPy\stockPy\src\Indicators.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -304,7 +336,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RequestIex.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Dawid Hrynkiewicz\Desktop\zadania\wlasne\stockPy\stockPy\src\RequestIex.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -325,7 +357,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Taxes.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Dawid Hrynkiewicz\Desktop\zadania\wlasne\stockPy\stockPy\src\Taxes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -346,7 +378,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Dawid Hrynkiewicz\Desktop\zadania\wlasne\stockPy\stockPy\UserCalculators.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Dawid Hrynkiewicz\Desktop\zadania\wlasne\stockPy\stockPy\src\UserCalculators.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -366,7 +398,22 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/UnitTesting/TestHistoricalRate.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/unittest/TestHistoricalRate.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in HistoricalRate" type="tests" factoryName="py.test">
+      <module name="stockPy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\Dawid Hrynkiewicz\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/pytest/HistoricalRates/test_HistoricalRates.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -381,6 +428,7 @@
       <item itemvalue="Python.App" />
       <item itemvalue="Python.Indicators" />
       <item itemvalue="Python tests.Unittests in TestHistoricalRate.py" />
+      <item itemvalue="Python tests.pytest in HistoricalRate" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -405,35 +453,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_TestHistoricalRate_py - 2019.07.23 at 15h 01m 23s.xml">
-      <configuration name="Unittests in TestHistoricalRate.py" configurationId="tests" />
+    <history-entry file="pytest_in_HistoricalRate - 2019.07.26 at 14h 25m 05s.xml">
+      <configuration name="pytest in HistoricalRate" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestHistoricalRate_py - 2019.07.23 at 15h 11m 57s.xml">
-      <configuration name="Unittests in TestHistoricalRate.py" configurationId="tests" />
+    <history-entry file="pytest_in_HistoricalRate - 2019.07.26 at 14h 26m 08s.xml">
+      <configuration name="pytest in HistoricalRate" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestHistoricalRate_py - 2019.07.23 at 15h 18m 22s.xml">
-      <configuration name="Unittests in TestHistoricalRate.py" configurationId="tests" />
+    <history-entry file="pytest_in_HistoricalRate - 2019.07.26 at 14h 34m 14s.xml">
+      <configuration name="pytest in HistoricalRate" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestHistoricalRate_py - 2019.07.23 at 15h 20m 51s.xml">
-      <configuration name="Unittests in TestHistoricalRate.py" configurationId="tests" />
+    <history-entry file="pytest_in_HistoricalRate - 2019.07.26 at 14h 34m 44s.xml">
+      <configuration name="pytest in HistoricalRate" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestHistoricalRate_py - 2019.07.23 at 15h 23m 40s.xml">
-      <configuration name="Unittests in TestHistoricalRate.py" configurationId="tests" />
+    <history-entry file="pytest_in_HistoricalRate - 2019.07.26 at 14h 36m 12s.xml">
+      <configuration name="pytest in HistoricalRate" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestHistoricalRate_py - 2019.07.23 at 15h 24m 08s.xml">
-      <configuration name="Unittests in TestHistoricalRate.py" configurationId="tests" />
+    <history-entry file="pytest_in_HistoricalRate - 2019.07.26 at 14h 47m 43s.xml">
+      <configuration name="pytest in HistoricalRate" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestHistoricalRate_py - 2019.07.23 at 15h 24m 53s.xml">
-      <configuration name="Unittests in TestHistoricalRate.py" configurationId="tests" />
+    <history-entry file="pytest_in_HistoricalRate - 2019.07.26 at 14h 48m 14s.xml">
+      <configuration name="pytest in HistoricalRate" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestHistoricalRate_py - 2019.07.23 at 15h 27m 30s.xml">
-      <configuration name="Unittests in TestHistoricalRate.py" configurationId="tests" />
+    <history-entry file="pytest_in_HistoricalRate - 2019.07.26 at 14h 50m 32s.xml">
+      <configuration name="pytest in HistoricalRate" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestHistoricalRate_py - 2019.07.23 at 15h 28m 27s.xml">
-      <configuration name="Unittests in TestHistoricalRate.py" configurationId="tests" />
+    <history-entry file="pytest_in_HistoricalRate - 2019.07.26 at 15h 13m 24s.xml">
+      <configuration name="pytest in HistoricalRate" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestHistoricalRate_py - 2019.07.23 at 15h 42m 09s.xml">
-      <configuration name="Unittests in TestHistoricalRate.py" configurationId="tests" />
+    <history-entry file="pytest_in_HistoricalRate - 2019.07.26 at 15h 28m 20s.xml">
+      <configuration name="pytest in HistoricalRate" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -445,8 +493,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.15492958" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.23726977" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -523,7 +571,7 @@
     <entry file="file://$PROJECT_DIR$/../../../../var.py" />
     <entry file="file://$PROJECT_DIR$/Calculations.py" />
     <entry file="file://$PROJECT_DIR$/RequestYahoo-old.py" />
-    <entry file="file://$PROJECT_DIR$/console-test.py">
+    <entry file="file://$PROJECT_DIR$/src/console-test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
@@ -534,7 +582,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zmywareczka.py" />
-    <entry file="file://$PROJECT_DIR$/app.py">
+    <entry file="file://$PROJECT_DIR$/src/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
@@ -544,7 +592,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Charts.py">
+    <entry file="file://$PROJECT_DIR$/src/Charts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
@@ -554,28 +602,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CurrentRate.py">
+    <entry file="file://$PROJECT_DIR$/src/CurrentRate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CurrentRateTable.py">
+    <entry file="file://$PROJECT_DIR$/src/CurrentRateTable.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Indicators.py">
+    <entry file="file://$PROJECT_DIR$/src/Indicators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RequestAv.py">
+    <entry file="file://$PROJECT_DIR$/src/RequestAv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
@@ -585,7 +633,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RequestIex.py">
+    <entry file="file://$PROJECT_DIR$/src/RequestIex.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
@@ -595,14 +643,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RequestNbp.py">
+    <entry file="file://$PROJECT_DIR$/src/RequestNbp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RequestYahoo.py">
+    <entry file="file://$PROJECT_DIR$/src/RequestYahoo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
@@ -612,70 +660,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RiskManagment-test.py">
+    <entry file="file://$PROJECT_DIR$/src/RiskManagment-test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserCalculators.py">
+    <entry file="file://$PROJECT_DIR$/src/UserCalculators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
           <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTesting/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Taxes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTesting/tests.py" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTesting/HistoricalRate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTesting/Helpers.py">
+    <entry file="file://$PROJECT_DIR$/src/Taxes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HistoricalRate.py">
+    <entry file="file://$PROJECT_DIR$/tests/unittest/TestHistoricalRate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="180">
+          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTesting/TestHistoricalRate.py">
+    <entry file="file://$PROJECT_DIR$/tests/unittest/Helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        <state relative-caret-position="40">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/unittest/HistoricalRate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/pytest/HistoricalRates/HistoricalRate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HistoricalRates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/pytest/HistoricalRates/test_HistoricalRates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/pytest/HistoricalRates/Helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
