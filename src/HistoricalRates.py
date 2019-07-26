@@ -1,5 +1,4 @@
 import requests
-import json
 
 
 class HistoricalRates:
@@ -50,18 +49,18 @@ class HistoricalRates:
         return rate
 
 
-historical_rate_currency = HistoricalRates(3.33, 'usd', '2019-01-15')
+#historical_rates = HistoricalRates(3.33, 'usd', '2019-01-15')
 
-try:
-    print(historical_rate_currency.get_historical_currency_rate())
-except json.decoder.JSONDecodeError:
-    print('Brak danych - w ten dzień giełda była zamknięta')
-try:
-    print(HistoricalRates.get_historical_gold_rate('2014-05-12'))
-except json.decoder.JSONDecodeError:
-    print ('Brak danych - tego dnia handel na złocie się nie odbywał')
-try:
-    print(HistoricalRates.get_historical_currencies_table('2014-05-14'))
-except json.decoder.JSONDecodeError:
-    print ('Brak danych - tego dnia giełda była nieczynna')
+# try:
+#     print(historical_rate_currency.get_historical_currency_rate())
+# except json.decoder.JSONDecodeError:
+#     print('Brak danych - w ten dzień giełda była zamknięta')
+# try:
+#     print(HistoricalRates.get_historical_gold_rate('2014-05-12'))
+# except json.decoder.JSONDecodeError:
+#     print ('Brak danych - tego dnia handel na złocie się nie odbywał')
+# try:
+#     print(HistoricalRates.get_historical_currencies_table('2014-05-14'))
+# except json.decoder.JSONDecodeError:
+#     print ('Brak danych - tego dnia giełda była nieczynna')
 

@@ -1,4 +1,3 @@
-from Indicators import Indicators
 from typing import List
 
 indicator_list: List[str] = []

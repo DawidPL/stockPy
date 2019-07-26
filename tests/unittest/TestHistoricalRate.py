@@ -1,7 +1,7 @@
 import unittest
 
 from Helpers import helper
-from HistoricalRate import get_historical_currency_rate, get_historical_gold_rate
+from src.HistoricalRates import get_historical_currency_rate, get_historical_gold_rate
 
 
 class TestHistoricalRates(unittest.TestCase):
