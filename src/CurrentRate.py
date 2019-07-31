@@ -18,7 +18,3 @@ class CurrentRate:
         r = url.json()
         rate: float = r[0]['cena']
         return f'Dzisiejszy kurs złota: {rate} PLN/gram'
-
-
-print(CurrentRate.current_rate_currency('eur'))
-print(CurrentRate.current_rate_gold())
