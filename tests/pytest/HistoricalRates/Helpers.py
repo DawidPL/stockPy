@@ -3,10 +3,6 @@ import mock
 from src.HistoricalRates import HistoricalRates
 
 
-def api_data_type_helper():
-    pass
-
-
 def currency_loop_helper():
         historical_rates_mock = mock.Mock(HistoricalRates)
         dates_rate = ['2018-05-25', '2017-02-20', '2013-12-11']
@@ -29,6 +25,5 @@ def gold_loop_helper(func, date, rates):
     pass
 
 
-def api_connection_check():
-    pass
+
 
