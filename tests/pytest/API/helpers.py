@@ -1,4 +1,4 @@
-def api_connection_response():
+def api_response_status():
     pass
 
 
