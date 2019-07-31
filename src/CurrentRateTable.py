@@ -14,6 +14,3 @@ class CurrentRateTable:
             mid: float = default_path['mid']
             print(f'{name} | {code} | {mid}')
 
-
-print(CurrentRateTable.currencies_table())
-
