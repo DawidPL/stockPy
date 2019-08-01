@@ -7,6 +7,6 @@ It will also allow you to analyze financial instruments using different indicato
 
 ### Using Technologies:
 ##### Python 3.7 (with static typing) 
-##### QT
+##### Django/QT
 ##### SQL, MySQL 
-##### JSON 
+##### 
