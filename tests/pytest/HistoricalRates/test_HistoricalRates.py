@@ -14,12 +14,6 @@ def test_currency_rate_equal(expected, actual) -> Any:
     assert expected == actual
 
 
-def test_api_given_data_type() -> Any:
-    pass
-    """
-    Checks if api sends the correct data format
-
-    """
 # def test_currency_rate():
 #
 #     """
