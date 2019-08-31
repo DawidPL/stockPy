@@ -1,10 +1,10 @@
 import pytest
-
+from typing import Any
 from Helpers import currency_loop_helper
 
 
 @pytest.mark.parametrize('expected, actual', currency_loop_helper())
-def test_currency_rate_equal(expected, actual):
+def test_currency_rate_equal(expected, actual) -> Any:
 
     """
 
@@ -14,7 +14,7 @@ def test_currency_rate_equal(expected, actual):
     assert expected == actual
 
 
-def test_api_given_data_type():
+def test_api_given_data_type() -> Any:
     pass
     """
     Checks if api sends the correct data format
