@@ -4,16 +4,12 @@ from Helpers import api_response_status_helper, api_data_type_return_helper
 
 
 @pytest.mark.parametrize('actual', api_response_status_helper())
-def test_api_response_status(actual) -> Any:
+def test_if_api_response_status_is_correct(actual) -> Any:
 
-    """
-
-    Test if connection with API is working
-
-    """
     assert 200 == actual
 
 
 @pytest.mark.parametrize('actual', api_data_type_return_helper())
-def test_api_data_type_return(actual) -> Any:
+def test_if_api_return_dict_or_list_data_type(actual) -> Any:
+
     assert type(actual) is dict or list

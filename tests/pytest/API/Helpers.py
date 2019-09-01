@@ -2,7 +2,12 @@ import requests
 from typing import List
 
 endpoints_list: List[str] = ['http://api.nbp.pl/api/cenyzlota/?format=json',
-                             'http://api.nbp.pl/api/exchangerates/rates/a/EUR/?format=json']
+                             'http://api.nbp.pl/api/exchangerates/rates/a/EUR/?format=json',
+                             'https://query1.finance.yahoo.com/v7/finance/options/FORD',
+                             'http://api.nbp.pl/api/exchangerates/tables/b/?format=json',
+                             'https://www.alphavantage.co/query?function=SECTOR&apikey=demo',
+                             'http://api.nbp.pl/api/exchangerates/rates/a/EUR/2015-06-23/?format=json',
+                             'https://cloud.iexapis.com/beta/stock/AMD/quote?token=pk_ad694083edbb4f37a878bb8e4f45e123']
 
 
 def api_response_status_helper() -> List[str]:
