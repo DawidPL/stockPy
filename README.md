@@ -8,5 +8,16 @@ It will also allow you to analyze financial instruments using different indicato
 ### Using Technologies:
 ##### Python 3.7 (with static typing) 
 ##### Django/QT
-##### SQL, MySQL 
-##### 
+##### SQL, MySQL
+#### REST API / Graphql
+##### HTML5, CSS3(OOCSS, FLEXBOX, GRID), Materialize, SCSS, JavaScript, jQuery, 
+
+### For testing:
+#### Postman
+#### Unittest
+#### Pytest
+
+### Additional Python libraries:
+#### mock
+#### cryptography
+
