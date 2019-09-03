@@ -1,5 +1,6 @@
 import requests
 from typing import List
+from security.encrypting import get_token
 
 endpoints_list: List[str] = ['http://api.nbp.pl/api/cenyzlota/?format=json',
                              'http://api.nbp.pl/api/exchangerates/rates/a/EUR/?format=json',
@@ -7,7 +8,7 @@ endpoints_list: List[str] = ['http://api.nbp.pl/api/cenyzlota/?format=json',
                              'http://api.nbp.pl/api/exchangerates/tables/b/?format=json',
                              'https://www.alphavantage.co/query?function=SECTOR&apikey=demo',
                              'http://api.nbp.pl/api/exchangerates/rates/a/EUR/2015-06-23/?format=json',
-                             'https://cloud.iexapis.com/beta/stock/AMD/quote?token=pk_ad694083edbb4f37a878bb8e4f45e123']
+                             f'https://cloud.iexapis.com/beta/stock/AMD/quote?token={get_token()}']
 
 
 def api_response_status_helper() -> List[str]:
